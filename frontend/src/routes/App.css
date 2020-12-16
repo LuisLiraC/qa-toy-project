@@ -1,0 +1,213 @@
+.Header {
+  background-color: var(--bg-color);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white
+}
+
+.Header__title {
+  font-size: 38px;
+  margin: 0;
+}
+
+.Header__subtitle {
+  font-size: 20px;
+}
+
+.Section {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.Button {
+  display: inline-block;
+  padding: 0.7rem;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Add {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.Backbutton {
+  text-align: left;
+}
+
+.Backbutton__link {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+.Form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.Form__input {
+  margin: 5px 0px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.ImagePreview__image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Choose {
+  display: block;
+  width: 100%;
+  margin: 5px 0px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 16px;
+}
+
+.Save {
+  background-color: var(--success);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.ImagePreview__button--hidden {
+  display: none;
+}
+
+.Error {
+  background-color: var(--error-bg);
+  border: 2px solid var(--error-border);
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 1rem;
+  border-radius: 5px;
+
+}
+
+.Error__message {
+  margin: 0;
+}
+
+.Character {
+  max-width: 300px;
+  padding: 25px;
+  border: 2px solid #d6d6d6;
+  background-color: #ececec;
+  border-radius: 5px;
+}
+
+.Character__image {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 2.5px;
+}
+
+.Character__name {
+  font-size: 24px;
+}
+
+.Character__details,
+.Character__edit {
+  display: block;
+}
+
+.Character__details,
+.Modal__confirm {
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid var(--main-color);
+}
+
+.Character__edit,
+.Modal__cancel {
+  color: var(--main-color);
+  border: 1px solid currentColor;
+  background-color: white;
+  margin-top: 8px;
+}
+
+.Modal .Button {
+  margin: 0px 10px;
+  padding: 10px;
+}
+
+.CharactersGrid {
+  padding: 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.Delete {
+  font-size: 14px;
+  color: red;
+  cursor: pointer;
+  margin: 20px
+}
+
+.Modal {
+  text-align: center;
+}
+
+.Modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.Modal__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 600px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.Details {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  text-align: left;
+}
+
+.Details img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.Details__info span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}

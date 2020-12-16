@@ -1,0 +1,23 @@
+:root {
+  --bg-color: #0c0c0c;
+  --main-color: indigo;
+  --success: rgb(41, 150, 41);
+  --error-bg: #e4260461;
+  --error-border: #e42604bf;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  word-wrap: break-word
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

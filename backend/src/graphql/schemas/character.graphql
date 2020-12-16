@@ -1,0 +1,49 @@
+type Query {
+    getCharacters: [Character!]!
+    getCharacter(_id: ID!): Character!
+}
+
+type Mutation {
+    addCharacter(characterInfo: AddCharacterInput!): Response!
+    editCharacter(_id: ID!, characterInfo: EditCharacterInput!): Response!
+    deleteCharacter(_id: ID!): Response!
+}
+
+type Character {
+    _id: ID!
+    name: String!
+    race: Race!
+    description: String!
+    gender: Gender!
+    image_url: String!
+}
+
+enum Race {
+    Hylian,
+    Gerudo,
+    Fairy,
+    Orni,
+    Korok,
+    Zora
+}
+
+enum Gender {
+    Female,
+    Male
+}
+
+input EditCharacterInput {
+    name: String
+    race: Race
+    gender: Gender
+    image: String
+    description: String
+}
+
+input AddCharacterInput {
+    name: String!
+    race: Race!
+    gender: Gender!
+    image: String!
+    description: String!
+}

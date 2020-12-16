@@ -1,0 +1,6 @@
+type Response {
+    _id: ID
+    message: String!
+    error: Boolean!
+    status: Int!
+}
